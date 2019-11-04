@@ -8,7 +8,7 @@ public class ClassDemo {
 	 *  1. Create simple class with few variables
 	 *  2. Create few methods for class behavior 
 	 *  3. create a main method and object for newly created.
-	 *  4. Try to call differenet methods with multiple objects.
+	 *  4. Try to call different methods with multiple objects.
 	 *  
 	 */
 
