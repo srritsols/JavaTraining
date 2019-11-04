@@ -1,4 +1,5 @@
- package datatypes.practice.khushi;
+
+package datatypes.practice.khushi;
 
 public class ExcerciseDataType {
 
