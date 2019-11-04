@@ -12,12 +12,31 @@ public class ClassDemo {
 	 *  
 	 */
 
+	int ReleaseYear;
+	
+	public ClassDemo(String brand) {
+		System.out.println("Brand name is :" + brand);
+		}
+	
+	public void setYear(int year) {
+		ReleaseYear=year;
+	}
+	
+	public int getYear() {
+		System.out.println("Car release year is:" + ReleaseYear);
+		return ReleaseYear;
+	}
 	public static void main( String[] args ){  
  
-		//TODO you need to create your logic here..
+	//object creation
+		ClassDemo myCar = new ClassDemo("Jaguar");
 		
+		//Calling Class method to setRelease year
+		myCar.setYear(2016);
 		
-
+		//calling class method to give Release year
+		myCar.getYear();
+	
 	}
 }
 
