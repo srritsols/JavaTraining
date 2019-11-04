@@ -28,7 +28,7 @@ public class Car {
  
  public int getYear() {
 	 return yearModel;
-	 //just for refernces
+	 //just for references
  }
  public String getBrand() {
 	 return brand;
