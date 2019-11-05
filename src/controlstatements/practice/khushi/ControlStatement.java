@@ -52,6 +52,7 @@ public class ControlStatement {
 	}
 	
 	//switch statement code block
+	//not able to execute
 	{
 	int marks = 90;
 	String grade; 
