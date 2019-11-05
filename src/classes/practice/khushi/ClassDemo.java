@@ -2,6 +2,10 @@ package classes.practice.khushi;
 
 public class ClassDemo {
 
+	private String name;
+	private int year;
+	private int marks;
+
 	/**
 	 * Please try to follow and create the following:
 	 * 
@@ -11,14 +15,38 @@ public class ClassDemo {
 	 *  4. Try to call different methods with multiple objects.
 	 *  
 	 */
-
+	public ClassDemo() {
+		name = "khushbu";
+		year = 3;
+		marks = 90;
+	}
+	
+	public ClassDemo (String name,int year,int marks) {
+		this.name = name;
+		this.year = year;
+		this.marks = marks;
+		
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public int getYear() {
+		return year;
+	}
+	public int getMarks() {
+		return marks;
+	}
+	
 	public static void main( String[] args ){  
- 
-		//TODO you need to create your logic here..
+		ClassDemo myProfile = new ClassDemo();
 		
-		
-
+		myProfile.getName();
+		myProfile.getYear();
+		myProfile.getMarks();
 	}
 }
+
 
 
