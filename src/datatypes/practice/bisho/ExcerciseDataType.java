@@ -42,7 +42,7 @@ public class ExcerciseDataType {
 			System.out.println("Bought more items" +" "+difference);
 		}
 		
-		// and- if operator 
+		// and- or operator 
 		System.out.println((nitesh<bisho) && (difference<=2));
 		System.out.println((nitesh<bisho) || (difference<=2));
 		System.out.println((nitesh>bisho) && (difference<=2));
