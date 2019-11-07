@@ -14,6 +14,7 @@ public class ExcerciseDataType {
 	public static void main( String[] args ){  
  
 		//TODO you need to create your logic here..
+		int a;
 		
 
 	}
