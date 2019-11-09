@@ -40,4 +40,11 @@ public class Animal {
 		this.noOfLegs = noOfLegs;
 	}
 
+	@Override
+	public String toString() {
+		return "Animal [vegetarian=" + vegetarian + ", eats=" + eats + ", noOfLegs=" + noOfLegs + "]";
+	}
+	 
+	
+
 }

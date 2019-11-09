@@ -22,4 +22,16 @@ public class Cat extends Animal{
 		this.color = color;
 	}
 
+	@Override
+	public String toString() {
+		return "Cat [color=" + color + "]";
+	}
+	
+	public static void main(String[] args) {
+		Cat cat = new Cat(true, "Nuts", 4, "Black"); 
+		System.out.println(cat.getNoOfLegs());
+	}
+	 
+	
+
 }

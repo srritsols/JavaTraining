@@ -3,8 +3,7 @@ package classes.results;
 public class CallingMethodsInSameClass
 {
 	public static void main(String[] args) {
-		printOne();
-		printOne();
+		printOne(); 
 		printTwo();
 	}
 
@@ -13,7 +12,7 @@ public class CallingMethodsInSameClass
 	}
 
 	public static void printTwo() {
-		printOne();
+		printOne(); 
 		printOne();
 	}
 }
