@@ -19,6 +19,10 @@ public class DataType {
 		String d= "Bisho";
 		double e= 25.00;
 		
+		String h= c+" "+ d;
+		
+		System.out.println(h);
+		
 		int f= (a+b);
 		System.out.println("Total number of items bought"+ " "+ f);
 		
