@@ -1,4 +1,4 @@
-package exceptions.material;
+package exceptions.practice;
 
 public class CheckingAccount {
 	
