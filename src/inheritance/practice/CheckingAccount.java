@@ -1,4 +1,6 @@
-package exceptions.material;
+package inheritance.practice;
+
+import exceptions.practice.InsufficientFundsException;
 
 public class CheckingAccount {
 	

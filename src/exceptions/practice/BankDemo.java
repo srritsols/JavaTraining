@@ -1,4 +1,6 @@
-package exceptions.material;
+package exceptions.practice;
+
+import inheritance.practice.CheckingAccount;
 
 public class BankDemo {
 
