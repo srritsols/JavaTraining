@@ -1,6 +1,9 @@
 package exceptions.practice;
+//<<<<<<< HEAD
 
 import inheritance.practice.CheckingAccount;
+//=======
+//>>>>>>> 4ac55ccb90d5c77fe2d9d69e0769e19560431274
 
 public class BankDemo {
 
