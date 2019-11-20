@@ -39,7 +39,7 @@
             <tr>
                 <th>Employee FirstName: </th>
                 <td>
-                	<input type="text" name="firstname" size="45"
+                	<input type="text" name="firstName" size="45"
                 			value="<c:out value='${employee.firstname}' />"
                 		/>
                 </td>
@@ -47,7 +47,7 @@
              <tr>
                 <th>Employee LastName: </th>
                 <td>
-                	<input type="text" name="lastname" size="45"
+                	<input type="text" name="lastName" size="45"
                 			value="<c:out value='${employee.lastname}' />"
                 	/>
                 </td>
@@ -71,7 +71,7 @@
             <tr>
                 <th>Department: </th>
                 <td>
-                	<input type="text" name="country" size="45"
+                	<input type="text" name="department" size="45"
                 			value="<c:out value='${employee.department}' />"
                 	/>
                 </td>

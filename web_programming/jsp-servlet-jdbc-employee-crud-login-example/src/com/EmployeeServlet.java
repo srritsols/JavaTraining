@@ -2,11 +2,11 @@ package com;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.sql.Date;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+import javax.servlet.ServletException; 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,8 +18,7 @@ import com.myuser.dao.EmployeeDao;
 
 /**
  * Servlet implementation class EmployeeServlet
- */
-@WebServlet("/EmployeeServlet")
+ */ 
 public class EmployeeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private EmployeeDao employeeDao;
@@ -84,11 +83,12 @@ public class EmployeeServlet extends HttpServlet {
 		int contact = Integer.parseInt(request.getParameter("contact"));
 		String email = request.getParameter("email");
 		String department  = request.getParameter("department");
-		String date = request.getParameter("date");
+		String dateStr = request.getParameter("date");
+		Date date = Date.valueOf(dateStr);
 		//SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		//Date hiredate = sdf.parse(date);
-		Employee emp = new Employee(employeeId, firstName,lastName, contact,email, department, date);
-		employeeDao.updateEmployee(emp);
+		Employee emp = new Employee(firstName,lastName, contact,email, department, date);
+		employeeDao.updateEmployee(emp); 
 		response.sendRedirect("list");
 		
 	}
@@ -118,9 +118,11 @@ public class EmployeeServlet extends HttpServlet {
 		int contact = Integer.parseInt(request.getParameter("contact"));
 		String email = request.getParameter("email");
 		String department  = request.getParameter("department");
-		String date = request.getParameter("date");
+		String dateStr = request.getParameter("date");
+		Date date = Date.valueOf(dateStr);
 		Employee newEmployee = new Employee(firstName, lastName,contact, email, department,date);
-		employeeDao.insertEmployee(newEmployee);
+		System.out.println(newEmployee);
+		employeeDao.insertEmployee(newEmployee); 
 		response.sendRedirect("list");
 	}
 

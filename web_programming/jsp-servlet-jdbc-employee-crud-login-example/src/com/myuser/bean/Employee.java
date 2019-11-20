@@ -1,45 +1,27 @@
 package com.myuser.bean;
 
+import java.sql.Date;
 
-
-public class Employee {
-	protected int employeeId;
+public class Employee {  
 	protected String firstName;
 	protected String lastName;
 	protected int contact;
 	protected String email;
 	protected String department;
-	protected String date;
+	protected Date date;
 
 	public Employee() {
 		
 	}
-	public Employee(String firstName, String lastName, int contact,String email,String department, String date) {
-		super();
+	public Employee(String firstName, String lastName, int contact,String email,String department, Date date) {
+	 
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.contact = contact;
 		this.email= email;
 		this.department = department;
 		this.date = date;
-	}
-	
-	public Employee(int employeeId,String firstName, String lastName, int contact,String email,String department, String date) {
-		super();
-		this.employeeId = employeeId;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.contact = contact;
-		this.email= email;
-		this.department = department;
-		this.date = date;
-	}
-	public int getEmployeeId() {
-		return employeeId;
-	}
-	public void setEmployeeId(int employeeId) {
-		this.employeeId = employeeId;
-	}
+	}  
 	public String getFirstName() {
 		return firstName;
 	}
@@ -70,10 +52,17 @@ public class Employee {
 	public void setDepartment(String department) {
 		this.department = department;
 	}
-	public String getDate() {
+	public Date getDate() {
 		return date;
 	}
-	public void setDate(String date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
+	@Override
+	public String toString() {
+		return "Employee [firstName=" + firstName + ", lastName=" + lastName + ", contact=" + contact + ", email="
+				+ email + ", department=" + department + ", date=" + date + "]";
+	}
+	
+	
 }

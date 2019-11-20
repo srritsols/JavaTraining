@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="JavaTraining">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/core_java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/spring_mvc/SpringExample/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/spring_mvc/springmvc-helloworld/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/web_programming/jsp-servlet-jdbc-employee-crud-login-example/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/web_programming/jsp-servlet-jdbc-login-example/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/web_programming/jsp-servlet-jdbc-mysql-crud-example/src"/>
+        <property name="context-root" value="JavaTraining"/>
+        <property name="java-output-path" value="/JavaTraining/bin"/>
+    </wb-module>
+</project-modules>

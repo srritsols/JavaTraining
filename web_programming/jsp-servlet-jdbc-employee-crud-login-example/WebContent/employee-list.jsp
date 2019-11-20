@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,8 +20,7 @@
 	 <div align="center">
         <table border="1" cellpadding="5">
             <caption><h2>Employee List</h2></caption>
-            <tr>
-                <th>EmployeeId</th>
+            <tr> 
                 <th>FirstName</th>
                 <th>LastName</th>
                 <th>Contact</th>
@@ -30,18 +30,17 @@
                 <th>Actions</th>
             </tr>
              <c:forEach var="employee" items="${listEmployee}">
-                <tr>
-                    <td><c:out value="${employee.id}" /></td>
-                    <td><c:out value="${employee.firstname}" /></td>
-                    <td><c:out value="${employee.lastname}" /></td>
-                    <td><c:out value="${employee.number}" /></td>
+                <tr> 
+                    <td><c:out value="${employee.firstName}" /></td>
+                    <td><c:out value="${employee.lastName}" /></td>
+                    <td><c:out value="${employee.contact}" /></td>
                     <td><c:out value="${employee.email}" /></td>
                     <td><c:out value="${employee.department}" /></td>
                     <td><c:out value="${employee.date}" /></td>
                     <td>
-                    	<a href="edit?id=<c:out value='${employee.id}' />">Edit</a>
+                    	<a href="edit?id=<c:out value='${employee.firstName}' />">Edit</a>
                     	&nbsp;&nbsp;&nbsp;&nbsp;
-                    	<a href="delete?id=<c:out value='${employee.id}' />">Delete</a>                    	
+                    	<a href="delete?id=<c:out value='${employee.firstName}' />">Delete</a>                    	
                     </td>
                 </tr>
             </c:forEach>
