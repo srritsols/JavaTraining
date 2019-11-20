@@ -1,4 +1,10 @@
-package exceptions.practice;
+//<<<<<<< HEAD:src/inheritance/practice/CheckingAccount.java
+package inheritance.practice;
+
+import exceptions.practice.InsufficientFundsException;
+//=======
+//package.exceptions.practice;
+//>>>>>>> 4ac55ccb90d5c77fe2d9d69e0769e19560431274:src/exceptions/practice/CheckingAccount.java
 
 public class CheckingAccount {
 	
