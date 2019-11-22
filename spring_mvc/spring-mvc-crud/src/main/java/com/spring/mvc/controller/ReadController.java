@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.mvc.dao.StudentDao;
 import com.spring.mvc.model.Student;
+ 
 
 @Controller
 public class ReadController {
@@ -21,6 +22,7 @@ public class ReadController {
 	public ModelAndView readStudent(ModelAndView model) throws IOException {
 
 		List<Student> listStudent = studentDao.read();
+		
 		model.addObject("listStudent", listStudent);
 		model.setViewName("read");
 

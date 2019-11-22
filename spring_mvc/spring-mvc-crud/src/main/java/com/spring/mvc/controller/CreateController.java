@@ -21,6 +21,7 @@ public class CreateController {
 			@RequestParam("course") String course, ModelAndView mv) {
 
 		Student student = new Student();
+		
 		student.setName(name);
 		student.setEmail(email);
 		student.setCourse(course);
@@ -33,7 +34,7 @@ public class CreateController {
 			mv.addObject("msg", "Error- check the console log.");
 		}
 
-		mv.setViewName("create");
+		mv.setViewName("read");
 
 		return mv;
 	}

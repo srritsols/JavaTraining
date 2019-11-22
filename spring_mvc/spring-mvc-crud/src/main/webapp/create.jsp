@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Create</title>
+<title>Student Registration</title>
 </head>
 <body>
 	<h2>Spring MVC Create, Read, Update and Delete (CRUD) Example</h2>	

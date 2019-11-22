@@ -5,6 +5,7 @@
 </head>
 <body>
 	<h2>Spring MVC Create, Read, Update and Delete (CRUD) Example</h2>
+	${msg}<br/>
 	<p><strong>Student List is Here | <a href="create.jsp">Click for Create</a></strong></p>
 	<table border="1">
 		<tr>
