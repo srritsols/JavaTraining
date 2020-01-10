@@ -1,9 +1,6 @@
-package exceptions.practice;
-//<<<<<<< HEAD
+package exceptions.practice; 
 
-import inheritance.practice.CheckingAccount;
-//=======
-//>>>>>>> 4ac55ccb90d5c77fe2d9d69e0769e19560431274
+import inheritance.practice.CheckingAccount; 
 
 public class BankDemo {
 
@@ -28,6 +25,8 @@ public class BankDemo {
 	         
 	        // e.printStackTrace();
 	         
+	      }catch(Exception e) {
+	    	  
 	      }
 	   }
 	}
