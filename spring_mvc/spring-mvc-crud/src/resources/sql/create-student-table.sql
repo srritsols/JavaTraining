@@ -1,5 +1,5 @@
 CREATE TABLE `student` (
-  `id` int(11) NOT NULL auto_increment,
+  `id` int(11) NOT NULL,
   `stu_name` varchar(45) DEFAULT NULL,
   `stu_email` varchar(45) DEFAULT NULL,
   `stu_course` varchar(45) DEFAULT NULL,

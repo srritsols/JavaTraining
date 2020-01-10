@@ -31,7 +31,7 @@ public class WebMvcConfig {
 		ds.setDriverClassName("com.mysql.jdbc.Driver");
 		ds.setUrl("jdbc:mysql://localhost:3306/javatraining");
 		ds.setUsername("root");
-		ds.setPassword("jrana");
+		ds.setPassword("");
 
 		return ds;
 	}

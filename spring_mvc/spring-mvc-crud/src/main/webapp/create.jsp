@@ -7,7 +7,7 @@
 <form action="create" method="post">
 <pre>
     <strong>Create Here | <a href="./read">Click for Read</a></strong>
-
+		
 	Name: <input type="text" name="name" />
 	
 	Email: <input type="text" name="email" />
