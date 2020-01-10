@@ -4,3 +4,4 @@
 *.project
 *.
 /spring_boot/rsvp-dev/*
+/spring_mvc/user-registration/.idea
