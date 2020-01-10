@@ -13,7 +13,7 @@ public class Java8MapExample {
 		Map<Integer, String> staff = new HashMap<>();
 		
 		staff.put(1, "John");
-		staff.put(2, "Victor");
+		staff.put(2, "Victor"); 
 		staff.put(3, "David"); 
 
 		// Before Java 5
