@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring_mvc/SpringExample/SpringExample.iml" filepath="$PROJECT_DIR$/spring_mvc/SpringExample/SpringExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mvc/SpringMVCHibernate/SpringMVCHibernate.iml" filepath="$PROJECT_DIR$/spring_mvc/SpringMVCHibernate/SpringMVCHibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mvc/SpringMVCHibernatePerson/SpringMVCHibernatePerson.iml" filepath="$PROJECT_DIR$/spring_mvc/SpringMVCHibernatePerson/SpringMVCHibernatePerson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core_java/core_java.iml" filepath="$PROJECT_DIR$/core_java/core_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_programming/jsp-servlet-jdbc-employee-crud-login-example/jsp-servlet-jdbc-employee-crud-login-example.iml" filepath="$PROJECT_DIR$/web_programming/jsp-servlet-jdbc-employee-crud-login-example/jsp-servlet-jdbc-employee-crud-login-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_programming/jsp-servlet-jdbc-login-example/jsp-servlet-jdbc-login-example.iml" filepath="$PROJECT_DIR$/web_programming/jsp-servlet-jdbc-login-example/jsp-servlet-jdbc-login-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_programming/jsp-servlet-jdbc-mysql-crud-example/jsp-servlet-jdbc-mysql-crud-example.iml" filepath="$PROJECT_DIR$/web_programming/jsp-servlet-jdbc-mysql-crud-example/jsp-servlet-jdbc-mysql-crud-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mvc/spring-mvc-crud/src/main/main.iml" filepath="$PROJECT_DIR$/spring_mvc/spring-mvc-crud/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mvc/java-spring-project/java-spring-project/src/main/main1.iml" filepath="$PROJECT_DIR$/spring_mvc/java-spring-project/java-spring-project/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_boot/java-spring-project/src/main/main2.iml" filepath="$PROJECT_DIR$/spring_boot/java-spring-project/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_boot/spring-boot-web-jsp/spring-boot-web-jsp.iml" filepath="$PROJECT_DIR$/spring_boot/spring-boot-web-jsp/spring-boot-web-jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mvc/springmvc-helloworld/springmvc-helloworld.iml" filepath="$PROJECT_DIR$/spring_mvc/springmvc-helloworld/springmvc-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mvc/spring-mvc-crud/src/test/test.iml" filepath="$PROJECT_DIR$/spring_mvc/spring-mvc-crud/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_boot/java-spring-project/src/test/test1.iml" filepath="$PROJECT_DIR$/spring_boot/java-spring-project/src/test/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mvc/java-spring-project/java-spring-project/src/test/test2.iml" filepath="$PROJECT_DIR$/spring_mvc/java-spring-project/java-spring-project/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_programming/web_programming.iml" filepath="$PROJECT_DIR$/web_programming/web_programming.iml" />
+    </modules>
+  </component>
+</project>
