@@ -1,0 +1,41 @@
+db-table-create
+
+
+CREATE TABLE `EMPLOYEE` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  
+  
+  `fname` varchar(20) NOT NULL DEFAULT '',
+  `lname` varchar(20) NOT NULL DEFAULT '',
+  `email` varchar(20) NOT NULL DEFAULT '',
+  `phone` varchar(20) NOT NULL DEFAULT '',
+  `company` varchar(20) NOT NULL DEFAULT '',
+  
+  
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+
+
+SELECT * FROM javatraining.employee;
+
+
+
+
+
+5 fields
+
+fname
+lname
+email
+phone
+company
+
+private int id;
+	
+	private String fname;
+	private String lname;
+	private String email;
+	private String phone;
+	private String company;
