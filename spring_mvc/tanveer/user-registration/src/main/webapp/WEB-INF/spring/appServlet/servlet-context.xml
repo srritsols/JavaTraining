@@ -39,8 +39,8 @@
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<beans:property name="dataSource" ref="dataSource" />
 		<beans:property name="annotatedClasses">
-			<beans:list><!-- 
-				<beans:value>com.journaldev.spring.model.Person</beans:value> -->
+			<beans:list>
+				<beans:value>com.journaldev.spring.model.Person</beans:value>
 				<beans:value>com.journaldev.spring.model.Employee</beans:value>
 			</beans:list>
 		</beans:property>
@@ -60,24 +60,13 @@
 		<beans:property name="personDAO" ref="personDAO"></beans:property>
 	</beans:bean>
 	
-	
-	
-	
-	
 	<beans:bean id="employeeDAO" class="com.journaldev.spring.dao.EmployeeDAOImpl">
 		<beans:property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
 	</beans:bean>
 	<beans:bean id="employeeService" class="com.journaldev.spring.service.EmployeeServiceImpl">
 		<beans:property name="employeeDAO" ref="employeeDAO"></beans:property>
 	</beans:bean>
-	
-	
-	
-	
-	
-	
-	
-	
+
 	<context:component-scan base-package="com.journaldev.spring" />
 	
 	<tx:annotation-driven transaction-manager="transactionManager"/>

@@ -18,18 +18,20 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.HttpClientErrorException;
 
 import net.guides.springboot2.springboot2jpacrudexample.model.Employee;
+import org.springframework.web.client.RestTemplate;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = Application.class)
 public class EmployeeControllerIntegrationTest {
-	@Autowired
-	private TestRestTemplate restTemplate;
 
-	@LocalServerPort
-	private int port;
+	@Autowired
+	private RestTemplate restTemplate;
 
 	private String getRootUrl() {
-		return "http://localhost:" + port;
+		return "http://localhost:8089";
 	}
 
 	@Test
@@ -50,15 +52,18 @@ public class EmployeeControllerIntegrationTest {
 
 	@Test
 	public void testGetEmployeeById() {
-		Employee employee = restTemplate.getForObject(getRootUrl() + "/employees/1", Employee.class);
-		System.out.println(employee.getFirstName());
-		assertNotNull(employee);
+		Map<String, String> params = new HashMap<String, String>();
+		params.put("id", "1");
+		RestTemplate restTemplate1 = new RestTemplate();
+		Employee result = restTemplate1.getForObject(getRootUrl() + "/employees", Employee.class, params);
+		System.out.println(result.getFirstName());
+		assertNotNull(result);
 	}
 
 	@Test
 	public void testCreateEmployee() {
 		Employee employee = new Employee();
-		employee.setEmailId("admin@gmail.com");
+		employee.setEmail("admin@gmail.com");
 		employee.setFirstName("admin");
 		employee.setLastName("admin");
 

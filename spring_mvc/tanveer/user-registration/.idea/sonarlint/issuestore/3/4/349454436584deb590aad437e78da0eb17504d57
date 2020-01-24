@@ -1,0 +1,15 @@
+
+Ssquid:S2629"7Use the built-in formatting to construct this argument.(÷ÏçÊÿÿÿÿÿ
+Nsquid:S2629#"7Use the built-in formatting to construct this argument.(¦á¯
+Ssquid:S2629,"7Use the built-in formatting to construct this argument.(·‘™±ùÿÿÿÿ
+Nsquid:S26295"7Use the built-in formatting to construct this argument.(’´›Î
+Msquid:S2629@"7Use the built-in formatting to construct this argument.(´®õ*
+]squid:S3457"AFormat specifiers should be used instead of string concatenation.(÷ÏçÊÿÿÿÿÿ
+Xsquid:S3457#"AFormat specifiers should be used instead of string concatenation.(¦á¯
+]squid:S3457,"AFormat specifiers should be used instead of string concatenation.(·‘™±ùÿÿÿÿ
+8squid:S21294"!Remove this "Integer" constructor(©ûîİ
+Wsquid:CallToDeprecatedMethod4"/Remove this use of "Integer"; it is deprecated.(©ûîİ
+Xsquid:S34575"AFormat specifiers should be used instead of string concatenation.(’´›Î
+8squid:S2129<"!Remove this "Integer" constructor(©ûîİ
+Wsquid:CallToDeprecatedMethod<"/Remove this use of "Integer"; it is deprecated.(©ûîİ
+Wsquid:S3457@"AFormat specifiers should be used instead of string concatenation.(´®õ*

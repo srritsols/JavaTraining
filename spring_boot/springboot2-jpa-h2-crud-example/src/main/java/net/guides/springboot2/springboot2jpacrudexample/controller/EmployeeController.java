@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import javax.validation.Valid;
 
@@ -22,24 +23,29 @@ import org.springframework.web.bind.annotation.RestController;
 import net.guides.springboot2.springboot2jpacrudexample.exception.ResourceNotFoundException;
 import net.guides.springboot2.springboot2jpacrudexample.model.Employee;
 import net.guides.springboot2.springboot2jpacrudexample.repository.EmployeeRepository;
+import sun.rmi.runtime.Log;
 
-@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/v1")
 public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;
 
+	private Logger logger = Logger.getLogger(EmployeeController.class.getName());
+
 	@GetMapping("/employees")
-	public List<Employee> getAllEmployees() {
+	public Iterable<Employee> getAllEmployees() {
 		return employeeRepository.findAll();
 	}
 
 	@GetMapping("/employees/{id}")
 	public ResponseEntity<Employee> getEmployeeById(@PathVariable(value = "id") Long employeeId)
 			throws ResourceNotFoundException {
-		Employee employee = employeeRepository.findById(employeeId)
+		logger.info("getEmployeeById started:");
+		logger.info("employeeId : " + employeeId);
+ 		Employee employee = employeeRepository.findById(employeeId)
 				.orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + employeeId));
+		logger.info("getEmployeeById ended:");
 		return ResponseEntity.ok().body(employee);
 	}
 
@@ -55,7 +61,7 @@ public class EmployeeController {
 		Employee employee = employeeRepository.findById(employeeId)
 				.orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + employeeId));
 
-		employee.setEmailId(employeeDetails.getEmailId());
+		employee.setEmail(employeeDetails.getEmail());
 		employee.setLastName(employeeDetails.getLastName());
 		employee.setFirstName(employeeDetails.getFirstName());
 		final Employee updatedEmployee = employeeRepository.save(employee);

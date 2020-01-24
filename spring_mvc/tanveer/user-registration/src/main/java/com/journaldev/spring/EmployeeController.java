@@ -16,6 +16,12 @@ import com.journaldev.spring.service.EmployeeService;
 public class EmployeeController {
 	
 	private EmployeeService employeeService;
+
+	private static final String EMPLOYEE ="employee";
+	@RequestMapping(value= "/",method = RequestMethod.GET)
+	public String sayHello(){
+		return "Hello  World!";
+	}
 	
 	@Autowired(required=true)
 	@Qualifier(value="employeeService")
@@ -27,7 +33,7 @@ public class EmployeeController {
 	public String listEmployees(Model model) {
 		model.addAttribute("employee", new Employee());
 		model.addAttribute("listEmployees", this.employeeService.listEmployees());
-		return "employee";
+		return EMPLOYEE;
 	}
 	
 	//For add and update person both
@@ -45,19 +51,19 @@ public class EmployeeController {
 		return "redirect:/employees";
 		
 	}
-	
+
 /*	@RequestMapping("/remove/{id}")
     public String removeEmployee(@PathVariable("id") int id){
-		
+
         this.employeeService.removeEmployee(id);
         return "redirect:/employees";
     }
  */
-    @RequestMapping("/edit/{id}")
+    @RequestMapping(value = "/edit/{id}", method = RequestMethod.POST)
     public String editEmployee(@PathVariable("id") int id, Model model){
         model.addAttribute("employee", this.employeeService.getEmployeeById(id));
         model.addAttribute("listEmployees", this.employeeService.listEmployees());
-        return "employee";
+        return EMPLOYEE;
     }
 	
 }

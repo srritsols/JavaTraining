@@ -1,0 +1,16 @@
+
+cWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ
+Z	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
+MWeb:TableWithoutCaptionCheck" Add a description to this table.(¿‰˜ÿÿÿÿÿ
+?	Web:S5256"%Add "<th>" headers to this "<table>".(¿‰˜ÿÿÿÿÿ
+MWeb:TableWithoutCaptionCheckJ" Add a description to this table.(éíÊùÿÿÿÿ
+C	Web:S1827L")Remove this deprecated "width" attribute.(€ù¦ÿÿÿÿÿ
+l Web:TableHeaderHasIdOrScopeCheckL";Add either an 'id' or a 'scope' attribute to this <th> tag.(€ù¦ÿÿÿÿÿ
+C	Web:S1827M")Remove this deprecated "width" attribute.(³Á¥Ïûÿÿÿÿ
+l Web:TableHeaderHasIdOrScopeCheckM";Add either an 'id' or a 'scope' attribute to this <th> tag.(³Á¥Ïûÿÿÿÿ
+>	Web:S1827N")Remove this deprecated "width" attribute.(û´µ¡
+g Web:TableHeaderHasIdOrScopeCheckN";Add either an 'id' or a 'scope' attribute to this <th> tag.(û´µ¡
+>	Web:S1827O")Remove this deprecated "width" attribute.(’‘‹Ã
+g Web:TableHeaderHasIdOrScopeCheckO";Add either an 'id' or a 'scope' attribute to this <th> tag.(’‘‹Ã
+C	Web:S1827P")Remove this deprecated "width" attribute.(ùèø§ùÿÿÿÿ
+l Web:TableHeaderHasIdOrScopeCheckP";Add either an 'id' or a 'scope' attribute to this <th> tag.(ùèø§ùÿÿÿÿ

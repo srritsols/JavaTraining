@@ -1,0 +1,8 @@
+
+ksquid:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–ϋ‚ωÿÿÿÿ8…ƒ¬ύ-
+nsquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(βΞ¨ÿÿÿÿÿ8Ο¬Βύ-
+dsquid:S4488 "HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Δ΅΄ψÿÿÿÿ
+hsquid:S4488>"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ΐΦ—Φ8•‚²ύ-
+lsquid:S1192""NUse already-defined constant 'EMPLOYEE' instead of duplicating its value here.(υσ•8Ο¬Βύ-
+\squid:S4684)"@Replace this persistent entity with a simple POJO or DTO object.(Ύκ‡Άόÿÿÿÿ
+asquid:S4488("JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(°Φ‚

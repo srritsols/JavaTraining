@@ -15,11 +15,12 @@ import net.guides.springboot2.springboot2jpacrudexample.model.Employee;
 
 public class SpringRestClient {
 
-	private static final String GET_EMPLOYEES_ENDPOINT_URL = "http://localhost:8080/api/v1/employees";
-	private static final String GET_EMPLOYEE_ENDPOINT_URL = "http://localhost:8080/api/v1/employees/{id}";
-	private static final String CREATE_EMPLOYEE_ENDPOINT_URL = "http://localhost:8080/api/v1/employees";
-	private static final String UPDATE_EMPLOYEE_ENDPOINT_URL = "http://localhost:8080/api/v1/employees/{id}";
-	private static final String DELETE_EMPLOYEE_ENDPOINT_URL = "http://localhost:8080/api/v1/employees/{id}";
+	private static final String GET_EMPLOYEES_ENDPOINT_URL = "http://localhost:8089/api/v1/employees";
+	private static final String GET_EMPLOYEE_ENDPOINT_URL = "http://localhost:8089/api/v1/employees/{id}";
+	private static final String CREATE_EMPLOYEE_ENDPOINT_URL = "http://localhost:8089/api/v1/employees";
+	private static final String UPDATE_EMPLOYEE_ENDPOINT_URL = "http://localhost:8089/api/v1/employees/{id}";
+	private static final String DELETE_EMPLOYEE_ENDPOINT_URL = "http://localhost:8089/api/v1/employees/{id}";
+
 	private static RestTemplate restTemplate = new RestTemplate();
 
 	public static void main(String[] args) {
@@ -32,13 +33,13 @@ public class SpringRestClient {
 		springRestClient.getEmployeeById();
 		
 		// Step3: get all employees
-		springRestClient.getEmployees();
+		//springRestClient.getEmployees();
 		
 		// Step4: Update employee with id = 1
-		springRestClient.updateEmployee();
+		//springRestClient.updateEmployee();
 		
 		// Step5: Delete employee with id = 1
-		springRestClient.deleteEmployee();
+		//springRestClient.deleteEmployee();
 	}
 
 	private void getEmployees() {
